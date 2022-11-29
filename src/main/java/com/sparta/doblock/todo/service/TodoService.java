@@ -54,12 +54,12 @@ public class TodoService {
 
         todoRepository.save(todo);
 
-        TodoResponseDto todoResponseDto = TodoResponseDto.builder()
-                .todoId(todo.getId())
-                .todoContent(todo.getTodoContent())
-                .todoMemo(todo.getTodoMemo())
-                .completed(todo.isCompleted())
-                .build();
+//        TodoResponseDto todoResponseDto = TodoResponseDto.builder()
+//                .todoId(todo.getId())
+//                .todoContent(todo.getTodoContent())
+//                .todoMemo(todo.getTodoMemo())
+//                .completed(todo.isCompleted())
+//                .build();
 
         return ResponseEntity.ok(todoResponseDto);
     }
