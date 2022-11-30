@@ -72,7 +72,7 @@ jobs:
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       run:
         aws deploy create-deployment
-        --application-name wef
+        --application-name doblock-codedeploy-app
         --deployment-group-name doblock-codedeploy-deployment-group
         --file-exists-behavior OVERWRITE
         --s3-location bucket=doblock-github-actions-s3-bucket,bundleType=zip,key=wef.zip
