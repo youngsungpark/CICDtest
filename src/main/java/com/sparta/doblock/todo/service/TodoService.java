@@ -62,9 +62,6 @@ public class TodoService {
                 .build();
 
         return ResponseEntity.ok(todoResponseDto);
-
-
-        
     }
 
     @Transactional
